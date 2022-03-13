@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Oxygen&family=PT+Sans&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 600;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 7em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.image img {
+  width: 20em;
+}
+
+.description {
+  /* centering the shelf element horizontaly */
+  justify-self: start;
+  /* similar to text-align */
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.colors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1em;
+}
+
+.dots {
+  cursor: pointer;
+  position: relative;
+  margin-top: 1.5em;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.dots::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.black {
+  background-color: black;
+}
+
+.red {
+  background-color: red;
+}
+
+.navy {
+  background-color: navy;
+}
+
+.white {
+  background-color: rgb(224, 222, 222);
+}
